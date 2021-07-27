@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1010760838494-8ns487kbur16j9ko5r24eaplotbrs81g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1010760838494-8ns487kbur16j9ko5r24eaplotbrs81g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCUJ9rufr09KYWSVtD8PYkiJNdtiTlA7FM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1010760838494</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.icom.vn.MyPoint</string>
+	<key>PROJECT_ID</key>
+	<string>mypoint-ef484</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mypoint-ef484.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1010760838494:ios:7516b3440a378c25dd33cf</string>
+	<key>DATABASE_URL</key>
+	<string>https://mypoint-ef484.firebaseio.com</string>
+</dict>
+</plist>

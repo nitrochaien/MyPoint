@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MerchantInfo-->
+        <scene sceneID="hea-Jk-zsr">
+            <objects>
+                <viewController storyboardIdentifier="MerchantInfoViewController" id="Mmp-MS-XDC" userLabel="MerchantInfo" customClass="MerchantInfoViewController" customModule="MyPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ppg-2b-xDb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="SSv-vi-3XJ">
+                                <rect key="frame" x="0.0" y="64" width="414" height="822"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HD7-X3-ZTm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1224"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zBA-qq-aCZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="244"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 12" translatesAutoresizingMaskIntoConstraints="NO" id="QG7-L4-az5">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="244"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="QG7-L4-az5" secondAttribute="height" multiplier="1.6" id="9nX-4J-aBK"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="QG7-L4-az5" firstAttribute="leading" secondItem="zBA-qq-aCZ" secondAttribute="leading" constant="12" id="9zC-ET-Aa1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QG7-L4-az5" secondAttribute="bottom" id="AvX-V4-ipR"/>
+                                                    <constraint firstItem="QG7-L4-az5" firstAttribute="top" secondItem="zBA-qq-aCZ" secondAttribute="top" id="KyQ-Nx-oEE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QG7-L4-az5" secondAttribute="trailing" constant="12" id="Z3R-ra-Dbu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-NR-pnD">
+                                                <rect key="frame" x="0.0" y="260" width="414" height="147.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1b-5N-qDJ">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="135.5"/>
+                                                        <string key="text">Nói rằng Starbucks mua và rang cà phê nguyên hạt chất lượng cao là hoàn toàn đúng. Đó là điều cốt lõi của công việc chúng tôi làm – nhưng thật khó để kể toàn bộ câu chuyện.</string>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="K1b-5N-qDJ" firstAttribute="top" secondItem="tIH-NR-pnD" secondAttribute="top" id="9z6-cY-zrw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="K1b-5N-qDJ" secondAttribute="bottom" constant="12" id="IbD-WB-wU9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="K1b-5N-qDJ" secondAttribute="trailing" constant="12" id="Ii0-OP-QU7"/>
+                                                    <constraint firstItem="K1b-5N-qDJ" firstAttribute="leading" secondItem="tIH-NR-pnD" secondAttribute="leading" constant="12" id="TVl-so-bVI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="msa-fa-Mlz">
+                                                <rect key="frame" x="0.0" y="423.5" width="414" height="140.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tp1-Au-7eO">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="120.5"/>
+                                                        <mutableString key="text">Các quán cà phê của chúng tôi đã trở thành địa điểm dành cho những người yêu thích cà phê ở mọi nơi. Tại sao họ chỉ muốn dùng cà phê Starbucks? Vì họ biết họ có thể tin tưởng vào dịch vụ chân thật, một không gian hấp dẫn và một cốc cà phê tuyệt vời được rang một cách chuyên nghiệp và được pha đậm đặc mọi lúc.</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Tp1-Au-7eO" firstAttribute="leading" secondItem="msa-fa-Mlz" secondAttribute="leading" constant="12" id="1dk-YR-a0t"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Tp1-Au-7eO" secondAttribute="trailing" constant="12" id="60i-GT-1Sb"/>
+                                                    <constraint firstItem="Tp1-Au-7eO" firstAttribute="top" secondItem="msa-fa-Mlz" secondAttribute="top" id="Gdb-Rv-2o7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Tp1-Au-7eO" secondAttribute="bottom" constant="20" id="GxV-0S-2c6"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1gx-LW-FiI">
+                                                <rect key="frame" x="0.0" y="580" width="414" height="128"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mong đợi Hơn cả Cà phê" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUJ-fg-Gn5">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="128"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="BUJ-fg-Gn5" secondAttribute="bottom" id="6xC-PR-gcj"/>
+                                                    <constraint firstItem="BUJ-fg-Gn5" firstAttribute="leading" secondItem="1gx-LW-FiI" secondAttribute="leading" constant="12" id="8FJ-Rc-kAY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="BUJ-fg-Gn5" secondAttribute="trailing" constant="12" id="Sw6-0c-JVH"/>
+                                                    <constraint firstItem="BUJ-fg-Gn5" firstAttribute="top" secondItem="1gx-LW-FiI" secondAttribute="top" id="oMv-kd-gzM"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoV-uB-Aef">
+                                                <rect key="frame" x="0.0" y="724" width="414" height="500"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfR-7b-EVK">
+                                                        <rect key="frame" x="12" y="0.0" width="390" height="500"/>
+                                                        <mutableString key="text">Chúng tôi là những nhà cung cấp nhiệt tình về cà phê và mọi thứ khác đi kèm với trải nghiệm bổ ích tại quán cà phê. Chúng tôi cũng cung cấp cơ hội lựa chọn các loại chè Tazo® hảo hạng, bánh ngọt ngon và các món chiêu đãi thú vị khác nhằm làm hài lòng mọi vị giác. Và nhạc bạn nghe trong cửa hàng được chọn là vì nghệ thuật và sự hấp dẫn của bản nhạc. Mọi người đến Starbucks để trò chuyện, họp mặt hoặc làm việc. Chúng tôi là địa điểm tụ họp cho tình hàng xóm, một phần của công việc hàng ngày – và chúng tôi không thể hạnh phúc hơn về điều này. Truy cập để tìm hiểu về chúng tôi và bạn sẽ thấy: chúng tôi thú vị hơn nhiều những gì chúng tôi pha.</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="cfR-7b-EVK" firstAttribute="leading" secondItem="NoV-uB-Aef" secondAttribute="leading" constant="12" id="6Ld-II-sf7"/>
+                                                    <constraint firstItem="cfR-7b-EVK" firstAttribute="top" secondItem="NoV-uB-Aef" secondAttribute="top" id="AEr-XW-5RD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cfR-7b-EVK" secondAttribute="trailing" constant="12" id="PaG-0x-KpB"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cfR-7b-EVK" secondAttribute="bottom" id="oeL-ja-3Jd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HD7-X3-ZTm" secondAttribute="bottom" id="Djk-Nf-FGL"/>
+                                    <constraint firstItem="HD7-X3-ZTm" firstAttribute="top" secondItem="SSv-vi-3XJ" secondAttribute="top" id="Nk0-Pj-mQa"/>
+                                    <constraint firstItem="HD7-X3-ZTm" firstAttribute="centerX" secondItem="SSv-vi-3XJ" secondAttribute="centerX" id="PL5-6s-hRE"/>
+                                    <constraint firstItem="HD7-X3-ZTm" firstAttribute="leading" secondItem="SSv-vi-3XJ" secondAttribute="leading" id="ZDe-Vn-66b"/>
+                                    <constraint firstAttribute="trailing" secondItem="HD7-X3-ZTm" secondAttribute="trailing" id="m2N-QG-BID"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SSv-vi-3XJ" firstAttribute="top" secondItem="eTB-DJ-2WU" secondAttribute="top" constant="20" id="6WZ-ZR-LQw"/>
+                            <constraint firstItem="SSv-vi-3XJ" firstAttribute="leading" secondItem="Ppg-2b-xDb" secondAttribute="leading" id="Uil-HO-MuI"/>
+                            <constraint firstAttribute="bottom" secondItem="SSv-vi-3XJ" secondAttribute="bottom" constant="10" id="XKo-8L-eA7"/>
+                            <constraint firstAttribute="trailing" secondItem="SSv-vi-3XJ" secondAttribute="trailing" id="tDQ-kb-Och"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eTB-DJ-2WU"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="infoCommentHeaderContainerView" destination="1gx-LW-FiI" id="leo-g9-yH5"/>
+                        <outlet property="infoCommentHeaderLabel" destination="BUJ-fg-Gn5" id="ZvC-2B-uqX"/>
+                        <outlet property="infoDescriptionContainerView" destination="msa-fa-Mlz" id="5zo-zS-RT1"/>
+                        <outlet property="infoDescriptionLabel" destination="Tp1-Au-7eO" id="BJG-OW-pBk"/>
+                        <outlet property="infoHeaderContainerView" destination="tIH-NR-pnD" id="oje-la-RWb"/>
+                        <outlet property="infoHeaderLabel" destination="K1b-5N-qDJ" id="tYr-sM-3cH"/>
+                        <outlet property="infoImageContainerView" destination="zBA-qq-aCZ" id="0yJ-VE-3cH"/>
+                        <outlet property="infoImageView" destination="QG7-L4-az5" id="792-fA-g02"/>
+                        <outlet property="infoSelfDesContainerView" destination="NoV-uB-Aef" id="DAd-HG-fHV"/>
+                        <outlet property="infoSelfDescLabel" destination="cfR-7b-EVK" id="Cms-r4-fjQ"/>
+                        <outlet property="scrollView" destination="SSv-vi-3XJ" id="g2L-XJ-bZY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DxI-Sh-mJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377.536231884058" y="156.02678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image 12" width="319" height="192"/>
+    </resources>
+</document>

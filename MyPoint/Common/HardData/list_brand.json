@@ -1,0 +1,92 @@
+[
+    {
+        "icon": "Congcafe",
+        "title": "CỘNG CAFE",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle1",
+        "id": 0
+    },
+    {
+        "icon": "ic_starbucks",
+        "title": "STARBUCK",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle",
+        "id": 1
+    },
+    {
+        "icon": "Lotte",
+        "title": "LOTTE",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle 3.3",
+        "id": 2
+    },
+    {
+        "icon": "TCH",
+        "title": "THE COFFEE HOUSE",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle1",
+        "id": 3
+    },
+    {
+        "icon": "Congcafe",
+        "title": "Cộng cafe",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle2",
+        "id": 4
+    },
+    {
+        "icon": "ic_starbucks",
+        "title": "STARBUCK",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle",
+        "id": 5
+    },
+    {
+        "icon": "Lotte",
+        "title": "LOTTE",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle 3.3",
+        "id": 6
+    },
+    {
+        "icon": "TCH",
+        "title": "THE COFFEE HOUSE",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle1",
+        "id": 7
+    },
+    {
+        "icon": "Congcafe",
+        "title": "Cộng cafe",
+        "content": "Tỉ lệ tích điểm: 20%",
+        "category_icon": "am_thuc",
+        "category": "Ẩm thực",
+        "titleColor": "#000000",
+        "background_icon": "Rectangle2",
+        "id": 8
+    }
+]

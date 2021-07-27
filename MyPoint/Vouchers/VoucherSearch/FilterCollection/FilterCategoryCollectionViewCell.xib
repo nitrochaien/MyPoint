@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterCategoryCollectionViewCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RLu-UP-8W5">
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="50"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SrI-6M-FLI">
+                                <rect key="frame" x="0.0" y="0.0" width="233" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBc-nb-fTm">
+                                        <rect key="frame" x="183" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lBc-nb-fTm" secondAttribute="height" multiplier="1:1" id="uMs-Zz-Vh1"/>
+                                        </constraints>
+                                        <state key="normal" image="filter_cancel_unselected"/>
+                                        <connections>
+                                            <action selector="onRemove:" destination="gTV-IL-0wX" eventType="touchUpInside" id="h90-yC-qUA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54E-sB-Jej">
+                                        <rect key="frame" x="8" y="0.0" width="175" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lBc-nb-fTm" firstAttribute="leading" secondItem="54E-sB-Jej" secondAttribute="trailing" id="Hb6-a3-ZHJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="54E-sB-Jej" secondAttribute="bottom" id="IYR-Ue-ce4"/>
+                                    <constraint firstItem="lBc-nb-fTm" firstAttribute="top" secondItem="SrI-6M-FLI" secondAttribute="top" id="Qwu-tM-svL"/>
+                                    <constraint firstAttribute="trailing" secondItem="lBc-nb-fTm" secondAttribute="trailing" id="ZfI-QN-SpO"/>
+                                    <constraint firstItem="54E-sB-Jej" firstAttribute="top" secondItem="SrI-6M-FLI" secondAttribute="top" id="cXS-Za-f6u"/>
+                                    <constraint firstItem="54E-sB-Jej" firstAttribute="leading" secondItem="SrI-6M-FLI" secondAttribute="leading" constant="8" id="jcJ-CE-Bu9"/>
+                                    <constraint firstAttribute="bottom" secondItem="lBc-nb-fTm" secondAttribute="bottom" id="sA9-9h-GVn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SrI-6M-FLI" firstAttribute="top" secondItem="RLu-UP-8W5" secondAttribute="top" id="Zzi-Tg-3eb"/>
+                            <constraint firstAttribute="trailing" secondItem="SrI-6M-FLI" secondAttribute="trailing" id="c7H-NU-YF5"/>
+                            <constraint firstAttribute="bottom" secondItem="SrI-6M-FLI" secondAttribute="bottom" id="iox-nE-xU6"/>
+                            <constraint firstItem="SrI-6M-FLI" firstAttribute="leading" secondItem="RLu-UP-8W5" secondAttribute="leading" id="nQ8-C5-EmP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RLu-UP-8W5" secondAttribute="trailing" id="8eY-kd-61b"/>
+                <constraint firstItem="RLu-UP-8W5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PkA-kG-xbS"/>
+                <constraint firstItem="RLu-UP-8W5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wlK-8V-wmY"/>
+                <constraint firstAttribute="bottom" secondItem="RLu-UP-8W5" secondAttribute="bottom" id="yN2-3C-FrK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="233" height="50"/>
+            <connections>
+                <outlet property="cancelButton" destination="lBc-nb-fTm" id="v0e-hz-35t"/>
+                <outlet property="categoryLabel" destination="54E-sB-Jej" id="Ggg-wq-6D0"/>
+                <outlet property="dataView" destination="SrI-6M-FLI" id="AtS-ah-PwN"/>
+            </connections>
+            <point key="canvasLocation" x="270.28985507246381" y="109.82142857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="filter_cancel_unselected" width="12" height="12"/>
+    </resources>
+</document>

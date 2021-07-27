@@ -1,0 +1,106 @@
+[
+    {
+        "icon": "ic_point_hunting",
+        "title": "pointHunting",
+        "section": 0,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 0
+    },
+    {
+        "icon": "ic_checkin",
+        "title": "checkIn",
+        "section": 0,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 1
+    },
+    {
+        "icon": "ic_voucher",
+        "title": "promotion",
+        "section": 0,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 2
+    },
+    {
+        "icon": "ic_invite_friends",
+        "title": "inviteFriends",
+        "section": 0,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 3
+    },
+    {
+        "icon": "ic_enter_code",
+        "title": "enterCode",
+        "section": 0,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 4
+    },
+    {
+        "icon": "ic_gift",
+        "title": "gift",
+        "section": 1,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 5
+    },
+    {
+        "icon": "ic_history",
+        "title": "history",
+        "section": 2,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 7
+    },
+    {
+        "icon": "ic_favorite",
+        "title": "favorite",
+        "section": 2,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 8
+    },
+    {
+        "icon": "ic_info",
+        "title": "info",
+        "section": 3,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 9
+    },
+    {
+        "icon": "ic_support_black",
+        "title": "support",
+        "section": 3,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 10
+    },
+    {
+        "icon": "ic_settings",
+        "title": "settings",
+        "section": 3,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 12
+    },
+    {
+        "icon": "ic_rate",
+        "title": "rating",
+        "section": 3,
+        "titleColor": "#032041",
+        "accessory": "ic_arrow_black",
+        "id": 11
+    },
+    {
+        "icon": "ic_logout",
+        "title": "signOut",
+        "section": 3,
+        "titleColor": "#FF2828",
+        "accessory": "",
+        "id": 13
+    }
+]

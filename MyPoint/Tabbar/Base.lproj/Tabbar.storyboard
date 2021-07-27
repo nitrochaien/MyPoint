@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainTabListViewController-->
+        <scene sceneID="xIU-Mj-9w0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="MainTabListViewController" id="zJM-40-gGh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8WT-bs-o2w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzU-r3-MeR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282" y="-573"/>
+        </scene>
+        <!--Tabbar View Controller-->
+        <scene sceneID="0LJ-xO-xfK">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6oy-Tg-LoJ" customClass="TabbarViewController" customModule="MyPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mun-Md-JJG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.90588235294117647" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dnQ-wE-Bwx" kind="relationship" relationship="viewControllers" id="9tW-Ed-2Tx"/>
+                        <segue destination="2q6-3I-ve4" kind="relationship" relationship="viewControllers" id="Xfh-0W-lI9"/>
+                        <segue destination="SrK-VV-7Do" kind="relationship" relationship="viewControllers" id="jvp-hU-kkr"/>
+                        <segue destination="8wG-aq-Vn4" kind="relationship" relationship="viewControllers" id="Xo2-CJ-SDL"/>
+                        <segue destination="mba-BK-gEY" kind="relationship" relationship="viewControllers" id="c34-5g-Tyo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFb-4i-nVu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="-356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sb5-sc-Bvy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dnQ-wE-Bwx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_tabbar_main_deactive" selectedImage="ic_tabbar_main_active" springLoaded="YES" id="aGp-i8-mY6">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.90588235294117647" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" red="0.011764705882352941" green="0.12549019607843137" blue="0.25490196078431371" alpha="0.4959332191780822" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="tabbar.home"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P8f-ve-kZf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zJM-40-gGh" kind="relationship" relationship="rootViewController" id="zhQ-T0-65w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvQ-fu-e7p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="639.13043478260875" y="-573.21428571428567"/>
+        </scene>
+        <!--VoucherTabListViewController-->
+        <scene sceneID="hWs-li-Ago">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vouchers" referencedIdentifier="VoucherTabListViewController" id="JTC-dk-v3G" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="OY0-Y5-6px"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnT-Bv-C7s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189.130434782609" y="-180.13392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gWp-Ss-D1e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2q6-3I-ve4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_tabbar_voucher_deactive" selectedImage="ic_tabbar_voucher_active" id="444-IV-nrJ">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="tabbar.voucher"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SMi-6T-C9u">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JTC-dk-v3G" kind="relationship" relationship="rootViewController" id="VFj-gA-xId"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xfu-WQ-1Qp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189.8550724637685" y="-180.13392857142856"/>
+        </scene>
+        <!--ScanningViewController-->
+        <scene sceneID="pMk-fO-vr8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Scanning" referencedIdentifier="ScanningViewController" id="hpc-vK-1T7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="oS5-ET-h1w"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yS6-Kp-xJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189.130434782609" y="300"/>
+        </scene>
+        <!--VendorsViewController-->
+        <scene sceneID="zCq-PQ-Abu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vendors" referencedIdentifier="VendorsViewController" id="GvB-kp-qsx" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2wn-et-PnQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSe-z2-8xE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487.68115942029" y="439.95535714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B82-7y-dK8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SrK-VV-7Do" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_tabbar_qr" selectedImage="ic_tabbar_qr" id="lvN-xI-5VH">
+                        <inset key="imageInsets" minX="0.0" minY="-25" maxX="0.0" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="tabbar.scan"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ele-es-GFG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hpc-vK-1T7" kind="relationship" relationship="rootViewController" id="MEg-ek-alC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4K2-dM-Zso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3098.5507246376815" y="300"/>
+        </scene>
+        <!--PersonalViewController-->
+        <scene sceneID="4Ms-Y9-DpL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Personal" referencedIdentifier="PersonalViewController" id="KB2-GQ-IfF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aoI-dK-u5q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eEj-a7-z8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QRc-iM-D7S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8wG-aq-Vn4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_tabbar_merchant_deactive" selectedImage="ic_tabbar_merchant_active" id="tPb-Dl-gKy">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="tabbar.merchant"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbq-3Y-UZt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GvB-kp-qsx" kind="relationship" relationship="rootViewController" id="L0M-Pk-HmW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ciE-Lp-1Zk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="546"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UQN-P3-6VH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mba-BK-gEY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ic_tabbar_profile_deactive" selectedImage="ic_tabbar_profile_active" id="vAU-Hb-33t">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="tabbar.personal"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dui-st-m3s">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KB2-GQ-IfF" kind="relationship" relationship="rootViewController" id="hgx-5W-8zT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKe-7J-BCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-400" y="440"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tabbar_main_active" width="20" height="23.5"/>
+        <image name="ic_tabbar_main_deactive" width="24" height="24"/>
+        <image name="ic_tabbar_merchant_active" width="21" height="21"/>
+        <image name="ic_tabbar_merchant_deactive" width="24" height="24"/>
+        <image name="ic_tabbar_profile_active" width="21" height="21"/>
+        <image name="ic_tabbar_profile_deactive" width="24" height="24"/>
+        <image name="ic_tabbar_qr" width="68" height="68"/>
+        <image name="ic_tabbar_voucher_active" width="24" height="24"/>
+        <image name="ic_tabbar_voucher_deactive" width="24" height="24"/>
+    </resources>
+</document>

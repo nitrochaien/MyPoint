@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BannerItemCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aEi-iQ-jKz">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1OZ-Cy-Gvr">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="96"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1OZ-Cy-Gvr" secondAttribute="trailing" id="4wB-Ak-VS4"/>
+                            <constraint firstAttribute="bottom" secondItem="1OZ-Cy-Gvr" secondAttribute="bottom" id="cEY-TF-qWT"/>
+                            <constraint firstItem="1OZ-Cy-Gvr" firstAttribute="leading" secondItem="aEi-iQ-jKz" secondAttribute="leading" id="gTv-1Z-axz"/>
+                            <constraint firstItem="1OZ-Cy-Gvr" firstAttribute="height" secondItem="aEi-iQ-jKz" secondAttribute="height" id="jsA-ww-eqN"/>
+                            <constraint firstItem="1OZ-Cy-Gvr" firstAttribute="top" secondItem="aEi-iQ-jKz" secondAttribute="top" id="l87-Z3-Egh"/>
+                            <constraint firstItem="1OZ-Cy-Gvr" firstAttribute="width" secondItem="aEi-iQ-jKz" secondAttribute="width" id="zr8-Dm-23q"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="aEi-iQ-jKz" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="NAh-vE-Sad"/>
+                <constraint firstItem="aEi-iQ-jKz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OUz-7q-FCK"/>
+                <constraint firstAttribute="trailing" secondItem="aEi-iQ-jKz" secondAttribute="trailing" id="Wcj-al-h17"/>
+                <constraint firstItem="aEi-iQ-jKz" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="iXJ-H7-vNa"/>
+                <constraint firstItem="aEi-iQ-jKz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wdU-l3-X5H"/>
+                <constraint firstAttribute="bottom" secondItem="aEi-iQ-jKz" secondAttribute="bottom" id="xAi-XH-4Ag"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="271" height="96"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="bannerBackgroundView" destination="aEi-iQ-jKz" id="V7L-VU-Zjv"/>
+                <outlet property="bannerImageView" destination="1OZ-Cy-Gvr" id="aq3-DR-mdt"/>
+            </connections>
+            <point key="canvasLocation" x="12.318840579710146" y="129.91071428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

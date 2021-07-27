@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterReceiverViewController" customModule="MyPoint" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="aL1-Iq-yuq" id="wjm-jU-djj"/>
+                <outlet property="tableView" destination="ydt-oP-oYD" id="3ep-ZO-ZUJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHW-tB-LGo">
+                    <rect key="frame" x="0.0" y="60" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IHW-tB-LGo" secondAttribute="height" multiplier="1:1" id="TtM-6l-7Gl"/>
+                        <constraint firstAttribute="height" constant="44" id="oSd-4a-df3"/>
+                    </constraints>
+                    <state key="normal" image="ic_back"/>
+                    <connections>
+                        <action selector="onBack:" destination="-1" eventType="touchUpInside" id="rQY-pa-82v"/>
+                    </connections>
+                </button>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aL1-Iq-yuq">
+                    <rect key="frame" x="36" y="57" width="362" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8pI-2N-uFM"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizePlaceholder" value="common.search"/>
+                    </userDefinedRuntimeAttributes>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-oP-oYD">
+                    <rect key="frame" x="0.0" y="123" width="414" height="739"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aL1-Iq-yuq" secondAttribute="trailing" constant="16" id="1uq-Zr-IYt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ydt-oP-oYD" secondAttribute="bottom" id="4HX-J0-mJe"/>
+                <constraint firstItem="aL1-Iq-yuq" firstAttribute="centerY" secondItem="IHW-tB-LGo" secondAttribute="centerY" id="H4Y-BA-MxU"/>
+                <constraint firstItem="ydt-oP-oYD" firstAttribute="top" secondItem="aL1-Iq-yuq" secondAttribute="bottom" constant="16" id="MB3-Ic-ikc"/>
+                <constraint firstItem="aL1-Iq-yuq" firstAttribute="leading" secondItem="IHW-tB-LGo" secondAttribute="trailing" constant="-8" id="YB0-C0-ckN"/>
+                <constraint firstItem="IHW-tB-LGo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="cOE-71-0cU"/>
+                <constraint firstItem="ydt-oP-oYD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jbZ-pF-5oF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ydt-oP-oYD" secondAttribute="trailing" id="wlS-ZL-ulG"/>
+                <constraint firstItem="IHW-tB-LGo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zTr-2V-pcZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="20" height="20"/>
+    </resources>
+</document>

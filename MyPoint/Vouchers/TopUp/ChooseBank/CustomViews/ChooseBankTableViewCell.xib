@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="KGk-i7-Jjw" customClass="ChooseBankTableViewCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2mC-et-Qb0">
+                        <rect key="frame" x="16" y="20.5" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2mC-et-Qb0" secondAttribute="height" multiplier="1:1" id="1tE-Bd-eiK"/>
+                            <constraint firstAttribute="height" constant="32" id="tPA-GG-45W"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMb-uw-HBi">
+                        <rect key="frame" x="64" y="36.5" width="240" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.01176470588" green="0.12549019610000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EMb-uw-HBi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ATJ-7q-v9x"/>
+                    <constraint firstItem="2mC-et-Qb0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Eyq-Uf-8YK"/>
+                    <constraint firstItem="EMb-uw-HBi" firstAttribute="leading" secondItem="2mC-et-Qb0" secondAttribute="trailing" constant="16" id="RvK-w0-wDr"/>
+                    <constraint firstItem="2mC-et-Qb0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hNV-Mw-VWH"/>
+                    <constraint firstAttribute="trailing" secondItem="EMb-uw-HBi" secondAttribute="trailing" constant="16" id="ic9-fj-Z4j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bankImageView" destination="2mC-et-Qb0" id="FbA-CM-pF0"/>
+                <outlet property="bankNameLabel" destination="EMb-uw-HBi" id="qaG-Uz-Zmt"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+</document>

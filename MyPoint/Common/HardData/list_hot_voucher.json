@@ -1,0 +1,52 @@
+[
+            {
+                "voucher_id": "1",
+                "code": "WPNJK",
+                "name": "Cơm chiên thập cẩm",
+                "description": "Cơm chiên thập cẩm ngon bá đạo",
+                "category": "Thực phẩm ăn liền",
+                "catalogue": "Food",
+                "brand": "Starbuck",
+                "voucher_type": "Discount",
+                "voucher_value": "20.000000000",
+                "start_time": "2020-01-01 12:00:00",
+                "end_time": "2020-05-01 12:00:00",
+                "prices": [
+                    {
+                        "chanel_code": "WEB",
+                        "pay_point": 100,
+                        "original_price": 130
+                    },
+                    {
+                        "chanel_code": "MOB",
+                        "pay_point": 100,
+                        "original_price": 130
+                    },
+                    {
+                        "chanel_code": "POS",
+                        "pay_point": 110,
+                        "original_price": 130
+                    }
+                ]
+            },
+            {
+                "voucher_id": "2",
+                "code": "UJAN9",
+                "name": "Gà chiên nước mắm",
+                "description": "Gà ta chiên nước mắm",
+                "category": "Thực phẩm ăn liền",
+                "catalogue": "Food",
+                "brand": "Starbuck",
+                "voucher_type": "Discount",
+                "voucher_value": "40.000000000",
+                "start_time": "2020-01-05 12:00:00",
+                "end_time": "2020-03-01 12:00:00",
+                "prices": [
+                    {
+                        "chanel_code": "MOB",
+                        "pay_point": 150,
+                        "original_price": 200
+                    }
+                ]
+              }
+        ]

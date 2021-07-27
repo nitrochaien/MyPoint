@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseSelectionView" customModule="MyPoint" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="iN0-l3-epB" id="ReQ-Rd-Ig5"/>
+                <outlet property="iconImageView" destination="3fT-mb-mhs" id="djQ-nD-M2Y"/>
+                <outlet property="tappableAreaView" destination="GlJ-O9-krj" id="vKe-T6-KXz"/>
+                <outlet property="titleLabel" destination="PlJ-qv-9ax" id="7fQ-iS-ffR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-O9-krj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlJ-qv-9ax">
+                            <rect key="frame" x="12" y="42" width="366" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" red="0.011764705882352941" green="0.12549019607843137" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="3fT-mb-mhs">
+                            <rect key="frame" x="386" y="43.5" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="aZp-qv-Goa"/>
+                                <constraint firstAttribute="width" secondItem="3fT-mb-mhs" secondAttribute="height" multiplier="1:1" id="wjL-em-CJL"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3fT-mb-mhs" secondAttribute="trailing" constant="12" id="LkG-op-l1S"/>
+                        <constraint firstItem="PlJ-qv-9ax" firstAttribute="leading" secondItem="GlJ-O9-krj" secondAttribute="leading" constant="12" id="No9-eG-P0r"/>
+                        <constraint firstItem="3fT-mb-mhs" firstAttribute="centerY" secondItem="PlJ-qv-9ax" secondAttribute="centerY" id="Rg5-ow-GVm"/>
+                        <constraint firstItem="3fT-mb-mhs" firstAttribute="leading" secondItem="PlJ-qv-9ax" secondAttribute="trailing" constant="8" id="qA7-Z7-Frq"/>
+                        <constraint firstItem="PlJ-qv-9ax" firstAttribute="centerY" secondItem="GlJ-O9-krj" secondAttribute="centerY" id="rGV-Uu-IEt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GlJ-O9-krj" secondAttribute="bottom" id="Eeo-0x-mDv"/>
+                <constraint firstItem="GlJ-O9-krj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="faM-4J-NiB"/>
+                <constraint firstItem="GlJ-O9-krj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rMs-xo-OHJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GlJ-O9-krj" secondAttribute="trailing" id="ueZ-y5-WTu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-153.68303571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_arrow_down" width="16" height="16"/>
+    </resources>
+</document>

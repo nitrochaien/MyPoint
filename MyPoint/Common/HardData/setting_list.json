@@ -1,0 +1,16 @@
+[
+    {
+        "icon": "ic_interested_categories",
+        "title": "interestedCategories",
+        "titleColor": "#032041",
+        "toggle": false,
+        "id": 2
+    },
+    {
+        "icon": "ic_change_pin",
+        "title": "changePin",
+        "titleColor": "#032041",
+        "toggle": false,
+        "id": 3
+    },
+]

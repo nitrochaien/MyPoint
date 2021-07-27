@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="NearbyMerchantProfileCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xy-Pa-26e">
+                        <rect key="frame" x="16" y="10" width="453" height="160"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 5" translatesAutoresizingMaskIntoConstraints="NO" id="X5c-RY-8KV">
+                                <rect key="frame" x="0.0" y="0.0" width="243.5" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X5c-RY-8KV" secondAttribute="height" multiplier="143:94" id="MeM-HO-xCy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbuck Đội Cấn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-dr-Vh1">
+                                <rect key="frame" x="255.5" y="8" width="189.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-qC-hiY">
+                                <rect key="frame" x="255.5" y="35" width="189.5" height="89"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tầng 1, Keangnam Hanoi Landmark Tower, Đường Phạm Hùng, Khu đô thị mới Cầu Giấy">
+                                        <attributes>
+                                            <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cursor-1" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-ve-LeC">
+                                <rect key="frame" x="255.5" y="132" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="9UA-tw-8Dx"/>
+                                    <constraint firstAttribute="height" constant="16" id="mny-fd-DFE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.6 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-hT-02x">
+                                <rect key="frame" x="276.5" y="133" width="171.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lo9-qC-hiY" firstAttribute="top" secondItem="P7A-dr-Vh1" secondAttribute="bottom" constant="10" id="2VY-9E-1dx"/>
+                            <constraint firstItem="8l1-ve-LeC" firstAttribute="bottom" secondItem="X5c-RY-8KV" secondAttribute="bottom" constant="-12" id="33X-V2-usL"/>
+                            <constraint firstAttribute="bottom" secondItem="X5c-RY-8KV" secondAttribute="bottom" id="3A2-am-fOH"/>
+                            <constraint firstItem="Lo9-qC-hiY" firstAttribute="leading" secondItem="X5c-RY-8KV" secondAttribute="trailing" constant="12" id="5cF-ZU-RO5"/>
+                            <constraint firstItem="X5c-RY-8KV" firstAttribute="leading" secondItem="2xy-Pa-26e" secondAttribute="leading" id="CUg-l6-wU6"/>
+                            <constraint firstAttribute="trailing" secondItem="Lo9-qC-hiY" secondAttribute="trailing" constant="8" id="DRu-4n-Ez2"/>
+                            <constraint firstItem="X5c-RY-8KV" firstAttribute="top" secondItem="2xy-Pa-26e" secondAttribute="top" id="Fz5-aE-6ul"/>
+                            <constraint firstItem="8l1-ve-LeC" firstAttribute="leading" secondItem="X5c-RY-8KV" secondAttribute="trailing" constant="12" id="IDs-ue-ZcJ"/>
+                            <constraint firstAttribute="trailing" secondItem="P7A-dr-Vh1" secondAttribute="trailing" constant="8" id="Kpr-u2-c3w"/>
+                            <constraint firstItem="P7A-dr-Vh1" firstAttribute="leading" secondItem="X5c-RY-8KV" secondAttribute="trailing" constant="12" id="QdY-56-ghq"/>
+                            <constraint firstAttribute="trailing" secondItem="OW7-hT-02x" secondAttribute="trailing" constant="5" id="cAt-EX-TVM"/>
+                            <constraint firstItem="OW7-hT-02x" firstAttribute="centerY" secondItem="8l1-ve-LeC" secondAttribute="centerY" id="cfe-MU-NqB"/>
+                            <constraint firstItem="8l1-ve-LeC" firstAttribute="top" secondItem="Lo9-qC-hiY" secondAttribute="bottom" constant="8" id="dvW-xx-gQL"/>
+                            <constraint firstItem="OW7-hT-02x" firstAttribute="leading" secondItem="8l1-ve-LeC" secondAttribute="trailing" constant="5" id="gy8-wG-ckF"/>
+                            <constraint firstItem="P7A-dr-Vh1" firstAttribute="top" secondItem="2xy-Pa-26e" secondAttribute="top" constant="8" id="wgm-Aq-Tc6"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2xy-Pa-26e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="3Ad-IC-dWL"/>
+                    <constraint firstAttribute="trailing" secondItem="2xy-Pa-26e" secondAttribute="trailing" constant="16" id="aF5-Qw-3jR"/>
+                    <constraint firstAttribute="bottom" secondItem="2xy-Pa-26e" secondAttribute="bottom" constant="10" id="smJ-Wt-PJ3"/>
+                    <constraint firstItem="2xy-Pa-26e" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="xcj-5I-yoU"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="8"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containterView" destination="2xy-Pa-26e" id="CjC-fL-eE3"/>
+                <outlet property="distanceHeaderImage" destination="8l1-ve-LeC" id="5OM-3X-TK9"/>
+                <outlet property="nearbyMerchantAddressLabel" destination="Lo9-qC-hiY" id="1Kq-Pe-8Oc"/>
+                <outlet property="nearbyMerchantDistanceLabel" destination="OW7-hT-02x" id="Kq7-bT-QUa"/>
+                <outlet property="nearbyMerchantImageView" destination="X5c-RY-8KV" id="zsX-So-3U4"/>
+                <outlet property="nearbyMerchantNameLabel" destination="P7A-dr-Vh1" id="LVd-TH-Urh"/>
+            </connections>
+            <point key="canvasLocation" x="251.44927536231887" y="136.60714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 5" width="143" height="94"/>
+        <image name="cursor-1" width="16" height="16"/>
+    </resources>
+</document>

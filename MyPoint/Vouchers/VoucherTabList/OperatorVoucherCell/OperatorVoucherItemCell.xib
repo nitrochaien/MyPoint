@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OperatorVoucherItemCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWX-id-aku">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="120"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5c-cd-aA8">
+                                <rect key="frame" x="8" y="8" width="327" height="104"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 20-1" translatesAutoresizingMaskIntoConstraints="NO" id="KCZ-Re-tr5">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="104"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="KCZ-Re-tr5" firstAttribute="top" secondItem="w5c-cd-aA8" secondAttribute="top" id="DSd-E9-7mT"/>
+                                    <constraint firstAttribute="bottom" secondItem="KCZ-Re-tr5" secondAttribute="bottom" id="F2G-Ru-Zzp"/>
+                                    <constraint firstItem="KCZ-Re-tr5" firstAttribute="leading" secondItem="w5c-cd-aA8" secondAttribute="leading" id="JCO-cy-tZY"/>
+                                    <constraint firstAttribute="trailing" secondItem="KCZ-Re-tr5" secondAttribute="trailing" id="Qfw-C1-IdQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w5c-cd-aA8" secondAttribute="trailing" constant="8" id="5OK-Hp-lhs"/>
+                            <constraint firstAttribute="bottom" secondItem="w5c-cd-aA8" secondAttribute="bottom" constant="8" id="Da1-gZ-Sls"/>
+                            <constraint firstItem="w5c-cd-aA8" firstAttribute="top" secondItem="mWX-id-aku" secondAttribute="top" constant="8" id="TtQ-Pj-4eX"/>
+                            <constraint firstItem="w5c-cd-aA8" firstAttribute="leading" secondItem="mWX-id-aku" secondAttribute="leading" constant="8" id="iYU-v5-aPu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mWX-id-aku" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2De-fc-8uN"/>
+                <constraint firstAttribute="bottom" secondItem="mWX-id-aku" secondAttribute="bottom" id="JwK-ab-dKQ"/>
+                <constraint firstItem="mWX-id-aku" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QCg-fg-0Qa"/>
+                <constraint firstAttribute="trailing" secondItem="mWX-id-aku" secondAttribute="trailing" id="asT-mP-ctb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="280" height="77"/>
+            <connections>
+                <outlet property="containerView" destination="w5c-cd-aA8" id="MGC-h8-6Gi"/>
+                <outlet property="operatorVoucherImageView" destination="KCZ-Re-tr5" id="bGl-Ui-RoX"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="120.87053571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Frame 20-1" width="686" height="240"/>
+    </resources>
+</document>

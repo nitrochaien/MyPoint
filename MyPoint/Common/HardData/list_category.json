@@ -1,0 +1,93 @@
+[
+    {
+        "icon": "am_thuc",
+        "title": "Ẩm thực",
+        "section": 0,
+        "titleColor": "#000000",
+        "id": 0
+    },
+    {
+        "icon": "bao_hiem",
+        "title": "Bảo hiểm",
+        "section": 0,
+        "titleColor": "#000000",
+        "id": 1
+    },
+    {
+        "icon": "cong_nghe",
+        "title": "Công nghệ",
+        "section": 0,
+        "titleColor": "#000000",
+        "id": 2
+    },
+    {
+        "icon": "di chuyen",
+        "title": "Di chuyển",
+        "section": 0,
+        "titleColor": "#000000",
+        "id": 3
+    },
+    {
+        "icon": "du_lich",
+        "title": "Du lịch",
+        "section": 0,
+        "titleColor": "#000000",
+        "id": 4
+    },
+    {
+        "icon": "Ecommerce",
+        "title": "Thương mại điện tử",
+        "section": 0,
+        "titleColor": "#000000",
+        "id": 5
+    },
+    {
+        "icon": "gia_dung",
+        "title": "Gia dụng",
+        "section": 1,
+        "titleColor": "#000000",
+        "id": 6
+    },
+    {
+        "icon": "giai_tri",
+        "title": "Giải trí",
+        "section": 1,
+        "titleColor": "#000000",
+        "id": 7
+    },
+    {
+        "icon": "giao_duc",
+        "title": "Giáo dục",
+        "section": 1,
+        "titleColor": "#000000",
+        "id": 8
+    },
+    {
+        "icon": "lam_dep",
+        "title": "Làm đẹp",
+        "section": 2,
+        "titleColor": "#000000",
+        "id": 9
+    },
+    {
+        "icon": "noi_that",
+        "title": "Nội thất",
+        "section": 2,
+        "titleColor": "#000000",
+        "id": 10
+    },
+    {
+        "icon": "tai_chinh",
+        "title": "Tài chính",
+        "section": 2,
+        "titleColor": "#000000",
+        "id": 11
+    },
+    {
+        "icon": "thoi_trang",
+        "title": "Thời trang",
+        "section": 2,
+        "titleColor": "#ff0000",
+        "id": 12
+    }
+]

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteVoucherViewController" customModule="MyPoint" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="9yT-oK-RVs" id="uL1-CN-KZd"/>
+                <outlet property="undoButton" destination="fdw-cj-A8Z" id="mf3-d5-KOm"/>
+                <outlet property="undoHeaderLabel" destination="hZ6-0x-ATn" id="l73-6V-oYB"/>
+                <outlet property="undoView" destination="C4W-Us-ZbA" id="jPj-oD-GwM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yT-oK-RVs">
+                    <rect key="frame" x="0.0" y="64" width="414" height="798"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4W-Us-ZbA">
+                    <rect key="frame" x="16" y="788" width="382" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-0x-ATn">
+                            <rect key="frame" x="28" y="25" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.94509803920000002" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="common.deleted"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdw-cj-A8Z">
+                            <rect key="frame" x="328" y="10.5" width="30" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.94509803920000002" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="common.completed"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="undoButtonTapped:" destination="-1" eventType="touchUpInside" id="NAz-O8-Gf7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.011764705882352941" green="0.12549019607843137" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Doq-Th-UDU"/>
+                        <constraint firstAttribute="trailing" secondItem="fdw-cj-A8Z" secondAttribute="trailing" constant="24" id="UAH-bX-edl"/>
+                        <constraint firstItem="hZ6-0x-ATn" firstAttribute="leading" secondItem="C4W-Us-ZbA" secondAttribute="leading" constant="28" id="h5P-1Y-HDN"/>
+                        <constraint firstItem="hZ6-0x-ATn" firstAttribute="centerY" secondItem="C4W-Us-ZbA" secondAttribute="centerY" id="mlS-7X-SK5"/>
+                        <constraint firstItem="fdw-cj-A8Z" firstAttribute="centerY" secondItem="hZ6-0x-ATn" secondAttribute="centerY" id="ugv-LA-WBz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9yT-oK-RVs" secondAttribute="trailing" id="Ave-OM-n0z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9yT-oK-RVs" secondAttribute="bottom" id="PEq-nq-bhi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="C4W-Us-ZbA" secondAttribute="trailing" constant="16" id="RH2-Li-z2n"/>
+                <constraint firstItem="9yT-oK-RVs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YiD-5t-WcZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="C4W-Us-ZbA" secondAttribute="bottom" constant="24" id="eV3-E8-1zO"/>
+                <constraint firstItem="C4W-Us-ZbA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ggm-85-GaS"/>
+                <constraint firstItem="9yT-oK-RVs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="tfw-a7-XH3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="114"/>
+        </view>
+    </objects>
+</document>

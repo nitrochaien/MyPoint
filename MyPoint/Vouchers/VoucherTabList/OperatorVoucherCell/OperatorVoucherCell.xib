@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OperatorVoucherCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZO-h4-prR">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="200"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mzD-BG-FsE">
+                                <rect key="frame" x="0.0" y="10" width="343" height="190"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VbY-B1-ccW">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-Qu-UvC">
+                                <rect key="frame" x="16" y="0.0" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mzD-BG-FsE" firstAttribute="top" secondItem="4WY-Qu-UvC" secondAttribute="bottom" constant="10" id="5P7-LB-j4U"/>
+                            <constraint firstAttribute="bottom" secondItem="mzD-BG-FsE" secondAttribute="bottom" id="DAZ-uw-PuC"/>
+                            <constraint firstItem="mzD-BG-FsE" firstAttribute="width" secondItem="qZO-h4-prR" secondAttribute="width" id="O8P-GS-QkP"/>
+                            <constraint firstItem="mzD-BG-FsE" firstAttribute="leading" secondItem="qZO-h4-prR" secondAttribute="leading" id="guK-qz-Jac"/>
+                            <constraint firstItem="4WY-Qu-UvC" firstAttribute="leading" secondItem="qZO-h4-prR" secondAttribute="leading" constant="16" id="pH3-MB-iV3"/>
+                            <constraint firstAttribute="trailing" secondItem="mzD-BG-FsE" secondAttribute="trailing" id="rW3-c6-emD"/>
+                            <constraint firstItem="4WY-Qu-UvC" firstAttribute="top" secondItem="qZO-h4-prR" secondAttribute="top" id="vce-pl-WFx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qZO-h4-prR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ESx-4r-NaX"/>
+                <constraint firstItem="qZO-h4-prR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Hvp-Id-m2R"/>
+                <constraint firstAttribute="trailing" secondItem="qZO-h4-prR" secondAttribute="trailing" id="Mpa-PN-aiG"/>
+                <constraint firstAttribute="bottom" secondItem="qZO-h4-prR" secondAttribute="bottom" id="d4y-sz-MCW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="operatorVoucherCollectionView" destination="mzD-BG-FsE" id="F0I-iV-qTX"/>
+                <outlet property="operatorVoucherHeaderLabel" destination="4WY-Qu-UvC" id="Z02-g1-Ul8"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

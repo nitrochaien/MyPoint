@@ -1,0 +1,54 @@
+{
+    "api": "myVoucherGetWaitingList",
+    "version": "1.0.0",
+    "lang": "en",
+    "tz_name": "Asia/Ho_Chi_Minh",
+    "tz_offset": "+07:00",
+    "request_time": "2004-02-12 15:19:21",
+    "response_time": "2004-02-12 15:19:21",
+    "status": "success",
+    "error_number": "0",
+    "error_code": "NO_ERROR",
+    "error_message": "No Error!",
+    "data": {
+        "list_start": 0,
+        "list_limit": 100,
+        "list_total": 1200,
+        "list_items": [
+            {
+                "voucher_id": "4",
+                "voucher_item_id": "1",
+                "got_time": "2019-01-01 15:20:21",
+                "expired_time": "2020-01-16 22:20:21",
+                "code": "NHGK",
+                "name": "Cơm chiên thập cẩm",
+                "description": "Cơm chiên thập cẩm ngon bá đạo",
+                "voucher_type": "D",
+                "voucher_value": "50000"
+            },
+            {
+                "voucher_id": "4",
+                "voucher_item_id": "1",
+                "got_time": "2019-01-01 15:20:21",
+                "expired_time": "2020-01-18 10:20:21",
+                "code": "NHGK",
+                "name": "Cơm chiên thập cẩm",
+                "description": "Cơm chiên thập cẩm ngon bá đạo",
+                "voucher_type": "D",
+                "voucher_value": "50000"
+            },
+            {
+                "voucher_id": "4",
+                "voucher_item_id": "1",
+                "got_time": "2019-01-01 15:20:21",
+                "expired_time": "2020-01-21 12:20:21",
+                "code": "NHGK",
+                "name": "Cơm chiên thập cẩm",
+                "description": "Cơm chiên thập cẩm ngon bá đạo",
+                "voucher_type": "D",
+                "voucher_value": "50000"
+            }
+        ]
+    }
+}
+

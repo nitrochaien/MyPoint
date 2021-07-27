@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FilterPartnerItemCollectionViewCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVD-ka-AQM">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="256"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Congcafe" translatesAutoresizingMaskIntoConstraints="NO" id="byg-Dw-cHC">
+                                <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="byg-Dw-cHC" secondAttribute="height" multiplier="1:1" id="acz-rL-Sn3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cộng Cafe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mng-oO-2mc">
+                                <rect key="frame" x="0.0" y="195" width="187" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.01176470588" green="0.12549019610000001" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Mng-oO-2mc" firstAttribute="top" secondItem="byg-Dw-cHC" secondAttribute="bottom" constant="8" id="6dX-Zx-Txr"/>
+                            <constraint firstItem="Mng-oO-2mc" firstAttribute="leading" secondItem="pVD-ka-AQM" secondAttribute="leading" id="BYb-oP-1Gh"/>
+                            <constraint firstAttribute="trailing" secondItem="byg-Dw-cHC" secondAttribute="trailing" id="hnD-JR-yye"/>
+                            <constraint firstItem="byg-Dw-cHC" firstAttribute="top" secondItem="pVD-ka-AQM" secondAttribute="top" id="iTF-7C-pjX"/>
+                            <constraint firstItem="byg-Dw-cHC" firstAttribute="leading" secondItem="pVD-ka-AQM" secondAttribute="leading" id="uPZ-qg-0AK"/>
+                            <constraint firstAttribute="trailing" secondItem="Mng-oO-2mc" secondAttribute="trailing" id="uoF-BN-iI4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pVD-ka-AQM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bdl-1p-BGh"/>
+                <constraint firstAttribute="trailing" secondItem="pVD-ka-AQM" secondAttribute="trailing" id="Sf3-P4-CNl"/>
+                <constraint firstItem="pVD-ka-AQM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="UAw-LS-ca3"/>
+                <constraint firstAttribute="bottom" secondItem="pVD-ka-AQM" secondAttribute="bottom" id="XPg-wi-rpJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="187" height="256"/>
+            <connections>
+                <outlet property="iconImageView" destination="byg-Dw-cHC" id="Bd5-c8-4iO"/>
+                <outlet property="nameLabel" destination="Mng-oO-2mc" id="94u-0u-nbf"/>
+            </connections>
+            <point key="canvasLocation" x="148.55072463768118" y="86.383928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Congcafe" width="64" height="64"/>
+    </resources>
+</document>

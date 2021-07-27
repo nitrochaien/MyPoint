@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCommentView" customModule="MyPoint" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="Zaa-U3-nJz" id="fB3-nM-eF4"/>
+                <outlet property="commentTextView" destination="wJT-ng-SPN" id="O0K-Sw-anL"/>
+                <outlet property="containerView" destination="iN0-l3-epB" id="8Ud-tl-v3f"/>
+                <outlet property="ratingView" destination="wSs-Qq-jr1" id="KOM-2M-oJP"/>
+                <outlet property="sendButton" destination="Sve-Lk-AkP" id="MjB-5C-bkg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="containerView">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="182"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSs-Qq-jr1" customClass="CosmosView" customModule="Cosmos">
+                    <rect key="frame" x="58" y="10" width="284" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="psC-GD-Ulg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                            <real key="value" value="35"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                            <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="emptyBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                            <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="filledBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 6" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-U3-nJz">
+                    <rect key="frame" x="16" y="83" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="cLn-sH-vLu"/>
+                        <constraint firstAttribute="height" constant="32" id="sXi-WZ-ZD2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wJT-ng-SPN">
+                    <rect key="frame" x="58" y="83" width="284" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sve-Lk-AkP">
+                    <rect key="frame" x="352" y="83" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="yMj-le-m3j"/>
+                    </constraints>
+                    <state key="normal" title="Gửi"/>
+                    <connections>
+                        <action selector="sendButtonTapped:" destination="-1" eventType="touchUpInside" id="onw-8H-eDX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wJT-ng-SPN" secondAttribute="bottom" constant="5" id="8t0-Da-Y9S"/>
+                <constraint firstItem="Sve-Lk-AkP" firstAttribute="leading" secondItem="wJT-ng-SPN" secondAttribute="trailing" constant="10" id="HL6-MT-Svt"/>
+                <constraint firstItem="wSs-Qq-jr1" firstAttribute="leading" secondItem="wJT-ng-SPN" secondAttribute="leading" id="M4b-8D-Te9"/>
+                <constraint firstItem="Sve-Lk-AkP" firstAttribute="top" secondItem="wJT-ng-SPN" secondAttribute="top" id="SxE-Oc-Ul8"/>
+                <constraint firstItem="Zaa-U3-nJz" firstAttribute="top" secondItem="wSs-Qq-jr1" secondAttribute="bottom" constant="23" id="THR-37-CVJ"/>
+                <constraint firstItem="wJT-ng-SPN" firstAttribute="leading" secondItem="Zaa-U3-nJz" secondAttribute="trailing" constant="10" id="cZ6-N3-Qca"/>
+                <constraint firstItem="Zaa-U3-nJz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dxu-jR-5g5"/>
+                <constraint firstItem="wJT-ng-SPN" firstAttribute="top" secondItem="Zaa-U3-nJz" secondAttribute="top" id="f58-JY-dHu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Sve-Lk-AkP" secondAttribute="trailing" constant="10" id="lk3-sT-VFT"/>
+                <constraint firstItem="wSs-Qq-jr1" firstAttribute="trailing" secondItem="wJT-ng-SPN" secondAttribute="trailing" id="uD7-Gs-sZX"/>
+                <constraint firstItem="wSs-Qq-jr1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="vgc-OO-bcC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="188.16964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Rectangle 6" width="65" height="65"/>
+    </resources>
+</document>

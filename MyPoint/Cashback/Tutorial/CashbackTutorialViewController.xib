@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CashbackTutorialViewController" customModule="MyPoint" customModuleProvider="target">
+            <connections>
+                <outlet property="tableHeightConstraint" destination="OdA-VP-OUx" id="Kne-Nx-trE"/>
+                <outlet property="tableView" destination="d4E-BO-Evd" id="WWh-F6-K1G"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d4E-BO-Evd">
+                    <rect key="frame" x="0.0" y="67.5" width="380" height="720.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="720.5" id="OdA-VP-OUx"/>
+                    </constraints>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naZ-Of-I2E">
+                    <rect key="frame" x="95" y="820" width="190" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="ZwT-xZ-eTd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="Đã hiểu" backgroundImage="btn_next_background">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onDone:" destination="-1" eventType="touchUpInside" id="O2M-c3-K8D"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Các bước thực hiện" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ap6-Hz-LVF">
+                    <rect key="frame" x="32" y="32" width="316" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="d4E-BO-Evd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1ER-w6-G0V"/>
+                <constraint firstAttribute="trailing" secondItem="ap6-Hz-LVF" secondAttribute="trailing" constant="32" id="6bP-0V-DmA"/>
+                <constraint firstItem="naZ-Of-I2E" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:2" id="7bA-7f-hQb"/>
+                <constraint firstItem="ap6-Hz-LVF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="801-HU-zm1"/>
+                <constraint firstAttribute="bottom" secondItem="naZ-Of-I2E" secondAttribute="bottom" constant="32" id="BMY-r2-Acf"/>
+                <constraint firstItem="naZ-Of-I2E" firstAttribute="top" secondItem="d4E-BO-Evd" secondAttribute="bottom" constant="32" id="Moe-ae-RjY"/>
+                <constraint firstItem="naZ-Of-I2E" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="X0X-gc-QZ5"/>
+                <constraint firstItem="ap6-Hz-LVF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="hjf-KA-bUX"/>
+                <constraint firstItem="d4E-BO-Evd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="nF1-n4-eBw"/>
+                <constraint firstItem="d4E-BO-Evd" firstAttribute="top" secondItem="ap6-Hz-LVF" secondAttribute="bottom" constant="16" id="xG5-Dc-fqA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="102.89855072463769" y="109.82142857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_next_background" width="319" height="52"/>
+    </resources>
+</document>

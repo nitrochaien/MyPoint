@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Tất cả thông báo",
+        "selected": true,
+        "id": 0
+    },
+    {
+        "name": "Chương trình từ thương hiệu yêu thích",
+        "selected": true,
+        "id": 1
+    },
+    {
+        "name": "Nhiệm vụ săn điểm",
+        "selected": true,
+        "id": 2
+    }
+]

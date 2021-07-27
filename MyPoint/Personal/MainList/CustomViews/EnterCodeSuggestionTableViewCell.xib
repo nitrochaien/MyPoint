@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="EnterCodeSuggestionTableViewCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="521" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="589-pu-ACn">
+                        <rect key="frame" x="16" y="13.5" width="449" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="invite.enter_code"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fe-NB-Qcd">
+                        <rect key="frame" x="473" y="0.0" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8Fe-NB-Qcd" secondAttribute="height" multiplier="1:1" id="VgG-sX-oaP"/>
+                            <constraint firstAttribute="height" constant="44" id="e8z-B3-WAj"/>
+                        </constraints>
+                        <state key="normal" image="ic_cancel_grey"/>
+                        <connections>
+                            <action selector="onDismiss:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xfE-t7-17h"/>
+                        </connections>
+                    </button>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwy-s2-o7j">
+                        <rect key="frame" x="16" y="44" width="489" height="48"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFE-uC-ozl">
+                                <rect key="frame" x="366" y="0.0" width="123" height="48"/>
+                                <color key="backgroundColor" red="0.44705882349999998" green="0.48627450979999998" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="invite.confirm"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onConfirm:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aUP-ND-1pr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3Y-vW-J5Y">
+                                <rect key="frame" x="12" y="0.0" width="346" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizePlaceholder" value="invite.placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oFE-uC-ozl" firstAttribute="leading" secondItem="b3Y-vW-J5Y" secondAttribute="trailing" constant="8" id="AEt-Fx-qIf"/>
+                            <constraint firstItem="b3Y-vW-J5Y" firstAttribute="leading" secondItem="Hwy-s2-o7j" secondAttribute="leading" constant="12" id="Lkj-UK-TaE"/>
+                            <constraint firstAttribute="bottom" secondItem="oFE-uC-ozl" secondAttribute="bottom" id="aTI-S7-PuL"/>
+                            <constraint firstAttribute="trailing" secondItem="oFE-uC-ozl" secondAttribute="trailing" id="bqx-Dz-4er"/>
+                            <constraint firstItem="oFE-uC-ozl" firstAttribute="width" secondItem="Hwy-s2-o7j" secondAttribute="width" multiplier="1:4" constant="1" id="oKO-4g-fNB"/>
+                            <constraint firstItem="b3Y-vW-J5Y" firstAttribute="top" secondItem="Hwy-s2-o7j" secondAttribute="top" id="qYg-4u-Byd"/>
+                            <constraint firstAttribute="bottom" secondItem="b3Y-vW-J5Y" secondAttribute="bottom" id="s4r-r6-a7H"/>
+                            <constraint firstItem="oFE-uC-ozl" firstAttribute="top" secondItem="Hwy-s2-o7j" secondAttribute="top" id="wKv-zM-Hy3"/>
+                            <constraint firstAttribute="height" constant="48" id="z50-9k-zMh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.94509803920000002" green="0.95294117649999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Hwy-s2-o7j" secondAttribute="bottom" constant="16" id="0my-Ge-HCe"/>
+                    <constraint firstAttribute="trailing" secondItem="8Fe-NB-Qcd" secondAttribute="trailing" constant="4" id="2bU-Lq-lLe"/>
+                    <constraint firstItem="8Fe-NB-Qcd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="90l-aK-WNc"/>
+                    <constraint firstAttribute="trailing" secondItem="Hwy-s2-o7j" secondAttribute="trailing" constant="16" id="Cbi-Mi-uHv"/>
+                    <constraint firstItem="589-pu-ACn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Emi-iQ-JWd"/>
+                    <constraint firstItem="Hwy-s2-o7j" firstAttribute="top" secondItem="8Fe-NB-Qcd" secondAttribute="bottom" id="GDp-53-ArK"/>
+                    <constraint firstItem="8Fe-NB-Qcd" firstAttribute="leading" secondItem="589-pu-ACn" secondAttribute="trailing" constant="8" id="WKS-5X-r0P"/>
+                    <constraint firstItem="8Fe-NB-Qcd" firstAttribute="centerY" secondItem="589-pu-ACn" secondAttribute="centerY" id="hhA-R1-2mB"/>
+                    <constraint firstItem="Hwy-s2-o7j" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rZN-u4-kqA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="codeTextField" destination="b3Y-vW-J5Y" id="STA-z1-gnj"/>
+                <outlet property="confirmButton" destination="oFE-uC-ozl" id="TNJ-Th-9dY"/>
+            </connections>
+            <point key="canvasLocation" x="283.33333333333337" y="133.92857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_cancel_grey" width="16" height="16"/>
+    </resources>
+</document>

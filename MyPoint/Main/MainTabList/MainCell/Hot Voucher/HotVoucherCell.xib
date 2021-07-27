@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HotVoucherCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vcp-KF-91N">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="260"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xMh-ce-swk">
+                                <rect key="frame" x="0.0" y="39" width="370" height="221"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fLZ-B1-4Nm">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5v7-0s-QnC">
+                                <rect key="frame" x="330" y="4" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n6o-XB-yzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <connections>
+                                    <action selector="viewAllButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="y0b-oG-NjQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghb-au-5yw">
+                                <rect key="frame" x="16" y="19" width="304" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ghb-au-5yw" firstAttribute="centerY" secondItem="5v7-0s-QnC" secondAttribute="centerY" id="0iv-9Z-cmZ"/>
+                            <constraint firstItem="ghb-au-5yw" firstAttribute="leading" secondItem="Vcp-KF-91N" secondAttribute="leading" constant="16" id="AGb-hf-YRr"/>
+                            <constraint firstItem="xMh-ce-swk" firstAttribute="leading" secondItem="Vcp-KF-91N" secondAttribute="leading" id="KdD-9s-3zZ"/>
+                            <constraint firstAttribute="trailing" secondItem="xMh-ce-swk" secondAttribute="trailing" id="PvR-U2-sug"/>
+                            <constraint firstItem="xMh-ce-swk" firstAttribute="top" secondItem="5v7-0s-QnC" secondAttribute="bottom" constant="5" id="ZuX-Y3-aG3"/>
+                            <constraint firstAttribute="trailing" secondItem="5v7-0s-QnC" secondAttribute="trailing" constant="10" id="oyL-if-Ngp"/>
+                            <constraint firstItem="5v7-0s-QnC" firstAttribute="top" secondItem="Vcp-KF-91N" secondAttribute="top" constant="4" id="pok-47-Npv"/>
+                            <constraint firstAttribute="bottom" secondItem="xMh-ce-swk" secondAttribute="bottom" id="rFd-gn-RYQ"/>
+                            <constraint firstItem="5v7-0s-QnC" firstAttribute="leading" secondItem="ghb-au-5yw" secondAttribute="trailing" constant="10" id="wa4-DU-hpK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Vcp-KF-91N" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gbq-VL-zK2"/>
+                <constraint firstAttribute="bottom" secondItem="Vcp-KF-91N" secondAttribute="bottom" id="mvt-Gx-gA8"/>
+                <constraint firstAttribute="trailing" secondItem="Vcp-KF-91N" secondAttribute="trailing" id="s2V-2O-vNV"/>
+                <constraint firstItem="Vcp-KF-91N" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uUN-7k-hJK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="hotVoucherCollectionView" destination="xMh-ce-swk" id="tO0-1c-OBb"/>
+                <outlet property="hotVoucherHeaderLabel" destination="ghb-au-5yw" id="NBV-1N-maB"/>
+                <outlet property="viewAllButton" destination="5v7-0s-QnC" id="xqe-2d-rHC"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="96"/>
+        </collectionViewCell>
+    </objects>
+</document>

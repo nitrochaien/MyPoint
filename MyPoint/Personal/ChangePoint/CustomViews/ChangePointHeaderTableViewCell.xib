@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="212" id="KGk-i7-Jjw" customClass="ChangePointHeaderTableViewCell" customModule="MyPoint" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiJ-ax-qEf">
+                        <rect key="frame" x="16" y="16" width="288" height="180"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gold" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-B4-7wY">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="180"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bfY-B4-7wY" secondAttribute="bottom" id="1TN-TQ-I9w"/>
+                            <constraint firstItem="bfY-B4-7wY" firstAttribute="leading" secondItem="PiJ-ax-qEf" secondAttribute="leading" id="1nn-Kc-QIL"/>
+                            <constraint firstAttribute="trailing" secondItem="bfY-B4-7wY" secondAttribute="trailing" id="65R-1M-zWR"/>
+                            <constraint firstItem="bfY-B4-7wY" firstAttribute="top" secondItem="PiJ-ax-qEf" secondAttribute="top" id="6pA-LF-EFm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PiJ-ax-qEf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Abu-HQ-cp6"/>
+                    <constraint firstAttribute="bottom" secondItem="PiJ-ax-qEf" secondAttribute="bottom" constant="16" id="UCt-OD-nzj"/>
+                    <constraint firstAttribute="trailing" secondItem="PiJ-ax-qEf" secondAttribute="trailing" constant="16" id="dSr-4p-wWX"/>
+                    <constraint firstItem="PiJ-ax-qEf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="uTf-sG-tRU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardImageView" destination="bfY-B4-7wY" id="DqQ-Pm-v0U"/>
+                <outlet property="cardView" destination="PiJ-ax-qEf" id="aNM-mi-LRG"/>
+            </connections>
+            <point key="canvasLocation" x="100.00000000000001" y="166.07142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Gold" width="512" height="297"/>
+    </resources>
+</document>

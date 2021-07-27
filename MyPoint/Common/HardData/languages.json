@@ -1,0 +1,14 @@
+[
+    {
+        "name": "English",
+        "code": "en",
+        "icon": "ic_en",
+        "selected": false
+    },
+    {
+        "name": "Tiếng Việt",
+        "code": "vi",
+        "icon": "ic_vi",
+        "selected": true
+    }
+]
